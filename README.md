@@ -10,12 +10,14 @@ $ docker build -t <<任意の名前>> ./
 ```
 
 2. Dockerコンテナの作成(Dockerイメージの実行)
+
 ローカルの8000番からコンテナの80番に転送するようにして実行する
 ```
 $ docker run -p 8000:80 -d 
 ```
 
 3. 動作確認
+
 curlを叩くかブラウザ上でlocalhost:8000を叩く
 ```
 $ curl http://localhost:8000
@@ -43,6 +45,7 @@ $ kubectl appply -f service.yaml
 ```
 
 3. 動作確認
+
 masterのIPを確認してから、curlを叩くかもしくはブラウザ上で確認
 ```
 ## masterのIPを確認
